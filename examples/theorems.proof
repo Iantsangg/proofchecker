@@ -1,0 +1,16 @@
+# Named Theorem Example
+# Demonstrates defining and applying theorems
+
+# Define a theorem about positive sums
+theorem positive_sum:
+  assume a > 0
+  assume b > 0
+  prove a + b > 0
+
+# Now use the theorem in a proof
+assume x > 0
+assume y > 0
+apply positive_sum
+
+# Use the theorem's conclusion
+prove x + y > 0

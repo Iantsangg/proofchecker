@@ -1,0 +1,5 @@
+# Invalid Proof: Counterexample check
+# This should be disproven because x + y can be 0 or negative
+assume x > 0
+assume y > -10
+prove x + y > 0

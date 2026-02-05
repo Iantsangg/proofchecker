@@ -1,0 +1,13 @@
+# Import Example
+# Demonstrates importing theorems from the standard library
+
+import "../stdlib/arithmetic.proof"
+
+# Use an imported theorem
+assume x > 0
+assume y > 0
+
+# Apply the positive_sum theorem
+apply positive_sum
+
+prove x + y > 0

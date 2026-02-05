@@ -1,0 +1,8 @@
+# Integer Type Example
+# Demonstrates the difference between Int and Real types
+
+let n: Int
+assume n > 0
+
+# For integers, n > 0 implies n >= 1
+prove n >= 1

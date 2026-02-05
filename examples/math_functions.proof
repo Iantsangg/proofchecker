@@ -1,0 +1,8 @@
+# Square root and absolute value properties
+
+assume x >= 0
+assume y >= 0
+
+# sqrt(x) * sqrt(x) relates to x
+# min(x,y) <= max(x,y) always holds
+prove min(x, y) <= max(x, y)

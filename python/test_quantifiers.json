@@ -1,0 +1,29 @@
+{
+    "vars": [],
+    "assumptions": [],
+    "claim": {
+        "type": "forall",
+        "vars": [
+            "x"
+        ],
+        "body": {
+            "type": "rel",
+            "op": ">=",
+            "lhs": {
+                "type": "pow",
+                "base": {
+                    "type": "var",
+                    "name": "x"
+                },
+                "exp": {
+                    "type": "num",
+                    "value": "2"
+                }
+            },
+            "rhs": {
+                "type": "num",
+                "value": "0"
+            }
+        }
+    }
+}

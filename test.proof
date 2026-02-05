@@ -1,0 +1,2 @@
+assume -1 < x 
+prove x = 1

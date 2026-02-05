@@ -1,0 +1,136 @@
+# Standard Arithmetic Theorems Library
+# Import this file to use these theorems in your proofs
+
+# ===== Basic Arithmetic =====
+
+# Positive sum: if both inputs are positive, sum is positive
+theorem positive_sum:
+    assume a > 0
+    assume b > 0
+    prove a + b > 0
+
+# Non-negative sum: if both inputs are non-negative, sum is non-negative
+theorem nonneg_sum:
+    assume a >= 0
+    assume b >= 0
+    prove a + b >= 0
+
+# Square is non-negative
+theorem square_nonneg:
+    prove x * x >= 0
+
+# Sum of squares is non-negative
+theorem sum_squares_nonneg:
+    prove x * x + y * y >= 0
+
+# Product of positives is positive
+theorem positive_product:
+    assume a > 0
+    assume b > 0
+    prove a * b > 0
+
+# Product of non-negatives is non-negative
+theorem nonneg_product:
+    assume a >= 0
+    assume b >= 0
+    prove a * b >= 0
+
+# ===== Transitivity =====
+
+# Transitivity of less-than
+theorem lt_trans:
+    assume a < b
+    assume b < c
+    prove a < c
+
+# Transitivity of less-than-or-equal
+theorem le_trans:
+    assume a <= b
+    assume b <= c
+    prove a <= c
+
+# Mixed transitivity
+theorem lt_le_trans:
+    assume a < b
+    assume b <= c
+    prove a < c
+
+theorem le_lt_trans:
+    assume a <= b
+    assume b < c
+    prove a < c
+
+# ===== Ordering =====
+
+# Trichotomy (any two reals are comparable)
+theorem trichotomy:
+    prove x < y or x = y or x > y
+
+# Anti-symmetry
+theorem le_antisym:
+    assume a <= b
+    assume b <= a
+    prove a = b
+
+# ===== Absolute Value =====
+
+# Absolute value is non-negative
+theorem abs_nonneg:
+    prove abs(x) >= 0
+
+# Absolute value of zero
+theorem abs_zero:
+    assume x = 0
+    prove abs(x) = 0
+
+# Triangle inequality
+theorem triangle_ineq:
+    prove abs(x + y) <= abs(x) + abs(y)
+
+# Reverse triangle inequality
+theorem reverse_triangle:
+    prove abs(x) - abs(y) <= abs(x - y)
+
+# ===== Means =====
+
+# AM-GM inequality (2 variables)
+theorem am_gm_2:
+    assume a >= 0
+    assume b >= 0
+    prove (a + b) / 2 >= sqrt(a * b)
+
+# Arithmetic mean bounds
+theorem am_bounds:
+    assume a <= b
+    prove a <= (a + b) / 2
+    
+theorem am_bounds_upper:
+    assume a <= b
+    prove (a + b) / 2 <= b
+
+# ===== Division =====
+
+# Positive divided by positive is positive
+theorem pos_div_pos:
+    assume a > 0
+    assume b > 0
+    prove a / b > 0
+
+# Dividing by larger gives smaller result
+theorem div_mono:
+    assume a > 0
+    assume b > c
+    assume c > 0
+    prove a / b < a / c
+
+# ===== Powers =====
+
+# Square of positive is positive
+theorem sq_pos:
+    assume x > 0
+    prove x * x > 0
+
+# Square root is non-negative
+theorem sqrt_nonneg:
+    assume x >= 0
+    prove sqrt(x) >= 0

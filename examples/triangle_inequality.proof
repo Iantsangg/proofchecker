@@ -1,0 +1,10 @@
+# Triangle Inequality Theorem Definition
+# forall x, y. abs(x + y) <= abs(x) + abs(y)
+
+assume forall x, y. abs(x + y) <= abs(x) + abs(y)
+
+# We want to prove it holds for specific values
+assume a = 5
+assume b = -3
+
+prove abs(a + b) <= abs(a) + abs(b)

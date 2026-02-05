@@ -1,0 +1,12 @@
+# Proof with intermediate steps (have/assert)
+# Demonstrates incremental proof building
+
+assume x > 0
+assume y > 0
+
+# First establish intermediate facts
+have x + y > x
+have x + y > y
+
+# Now prove the final claim
+prove x + y > max(x, y) / 2

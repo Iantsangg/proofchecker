@@ -1,0 +1,7 @@
+# Advanced Proof: Epsilon-delta style reasoning
+# Demonstrates quantifiers and more complex formulas
+
+assume eps > 0
+
+# If eps > 0, then eps/2 is a valid smaller epsilon
+prove eps / 2 > 0 and eps / 2 < eps

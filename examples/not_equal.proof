@@ -1,0 +1,7 @@
+# Not Equal Operator Example
+# Demonstrates the != operator
+
+assume x != 0
+
+# If x is not zero, then x^2 is positive
+prove x * x > 0

@@ -1,0 +1,9 @@
+# Example Proof: Properties of positive numbers
+# This demonstrates the human-readable DSL syntax
+
+# Assume we have two positive numbers
+assume x > 0
+assume y > 0
+
+# Prove that their sum is also positive
+prove x + y > 0

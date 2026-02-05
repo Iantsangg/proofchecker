@@ -1,0 +1,17 @@
+{
+  "vars": ["eps"],
+  "assumptions": [
+    {
+      "type": "rel",
+      "op": ">",
+      "lhs": { "type": "var", "name": "eps" },
+      "rhs": { "type": "num", "value": "0" }
+    }
+  ],
+  "claim": {
+    "type": "rel",
+    "op": "<",
+    "lhs": { "type": "var", "name": "eps" },
+    "rhs": { "type": "num", "value": "0" }
+  }
+}

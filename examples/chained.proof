@@ -1,0 +1,12 @@
+# Inequality Chaining Example
+# Demonstrates the chained comparison syntax
+
+let a
+let b
+let c
+
+# Chained inequality: 0 < a <= b < c
+# This is equivalent to: 0 < a and a <= b and b < c
+assume 0 < a <= b < c
+
+prove a < c

@@ -1,0 +1,9 @@
+# AM-GM Inequality (Arithmetic Mean - Geometric Mean)
+# For positive numbers x and y:
+# The arithmetic mean is at least as large as the geometric mean
+
+assume x > 0
+assume y > 0
+
+# Arithmetic mean >= Geometric mean
+prove (x + y) / 2 >= sqrt(x * y)

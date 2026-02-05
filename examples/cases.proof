@@ -1,0 +1,12 @@
+# Proof by Cases Example
+# Demonstrates case analysis
+
+assume x != 0
+
+cases:
+    case x > 0:
+        have x * x > 0
+    case x < 0:
+        have x * x > 0
+
+prove x * x > 0

@@ -1,0 +1,82 @@
+{
+    "vars": [
+        "x",
+        "y"
+    ],
+    "assumptions": [
+        {
+            "type": "rel",
+            "op": ">",
+            "lhs": {
+                "type": "var",
+                "name": "x"
+            },
+            "rhs": {
+                "type": "num",
+                "value": "0"
+            }
+        },
+        {
+            "type": "rel",
+            "op": ">",
+            "lhs": {
+                "type": "var",
+                "name": "y"
+            },
+            "rhs": {
+                "type": "num",
+                "value": "0"
+            }
+        }
+    ],
+    "claim": {
+        "type": "and",
+        "args": [
+            {
+                "type": "rel",
+                "op": ">=",
+                "lhs": {
+                    "type": "sqrt",
+                    "arg": {
+                        "type": "var",
+                        "name": "x"
+                    }
+                },
+                "rhs": {
+                    "type": "num",
+                    "value": "0"
+                }
+            },
+            {
+                "type": "rel",
+                "op": "<=",
+                "lhs": {
+                    "type": "min",
+                    "args": [
+                        {
+                            "type": "var",
+                            "name": "x"
+                        },
+                        {
+                            "type": "var",
+                            "name": "y"
+                        }
+                    ]
+                },
+                "rhs": {
+                    "type": "max",
+                    "args": [
+                        {
+                            "type": "var",
+                            "name": "x"
+                        },
+                        {
+                            "type": "var",
+                            "name": "y"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
