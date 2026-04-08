@@ -4,3 +4,6 @@ __pycache__/
 .DS_Store
 runs/
 build/
+.vscode/
+cpp/.cache/
+cpp/compile_commands.json
